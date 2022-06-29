@@ -532,13 +532,6 @@ body { background: var(--white); }
 
 
 
-/*-----------------------------------*\
-  #Team
-\*-----------------------------------*/
-
- 
-
-
 
 /*-----------------------------------*\
   #CONTACT
@@ -618,6 +611,83 @@ textarea.input-field {
 
 
 
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+footer {
+  background: var(--raisin-black-1);
+  color: var(--white-opacity);
+  font-weight: var(--fw-500);
+}
+
+.footer-top { padding-block: var(--section-padding); }
+
+.footer-brand { margin-bottom: 60px; }
+
+footer .logo { margin-bottom: 25px; }
+
+.footer-text {
+  font-size: var(--fs-6);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-link {
+  color: var(--white-opacity);
+  font-size: 25px;
+  transition: var(--transition);
+}
+
+.social-link:is(:hover, :focus) { color: var(--white); }
+
+.footer-link-box {
+  display: grid;
+  gap: 50px;
+}
+
+.footer-list li:first-child { margin-bottom: 20px; }
+
+.footer-item-title {
+  color: var(--white);
+  font-family: var(--ff-mulish);
+  font-weight: var(--fw-700);
+}
+
+.footer-link {
+  color: var(--white-opacity);
+  font-size: var(--fs-6);
+  transition: var(--transition);
+  padding-block: 10px;
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--white);
+  transform: translateX(5px);
+}
+
+.footer-bottom {
+  background: var(--raisin-black-2);
+  padding-block: 20px;
+  text-align: center;
+}
+
+.copyright a {
+  display: inline-block;
+  color: var(--white-opacity);
+  transition: var(--transition);
+}
+
+.copyright a:is(:hover, :focus) { color: var(--white); }
 
 
 
@@ -760,6 +830,14 @@ textarea.input-field {
   .wrapper-flex .input-wrapper { width: 50%; }
 
 
+
+  /**
+   * FOOTER
+   */
+
+  .footer-link-box { grid-template-columns: repeat(3, 1fr); }
+
+}
 
 
 
@@ -909,6 +987,25 @@ textarea.input-field {
 
 
 
+  /**
+   * FOOTER
+   */
+
+  .footer-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .footer-brand {
+    margin-bottom: 0;
+    max-width: 300px;
+  }
+
+  .footer-list { width: 140px; }
+
+}
 
 
 
@@ -935,4 +1032,13 @@ textarea.input-field {
   .hero .container { gap: 150px; }
 
 
- 
+
+  /**
+   * FOOTER
+   */
+
+  .footer-link-box { margin-right: 40px; }
+
+  .footer-list { width: 170px; }
+
+}
